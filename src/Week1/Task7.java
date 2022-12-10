@@ -13,6 +13,7 @@ public class Task7 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         int number = console.nextInt();
+
         int first = number / 10;
         int second = number % 10;
 

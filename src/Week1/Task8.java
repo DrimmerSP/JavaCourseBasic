@@ -20,17 +20,15 @@ public class Task8 {
         System.out.print("Теперь ведите количестко конфет: ");
         int k = console.nextInt();
 
-        int candy = k / n;
-        int canForParent = k - (candy * n);
+//        int candy = k / n;
+//        int canForParent = k - (candy * n);
+//
+//        System.out.println("Каждый ребёнок получит по: " + candy + " конфет. ");
+//        System.out.println("А родителям достанется " + canForParent + " конфет(а) с остатка.");
 
-        System.out.println("Каждый ребёнок получит по: " + candy + " конфет. ");
-        System.out.println("А родителям достанется " + canForParent + " конфет(а) с остатка.");
-
-        /*
           System.out.println("------------------------------------------");
         System.out.println("Всего раздали конфет: " + k / n * n + " шт");
         System.out.println("Каждому ребенку по: " + k / n + " шт");
         System.out.println("Осталось конфет для взрослых: " + k % n + " шт");
-         */
     }
 }
