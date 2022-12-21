@@ -2,7 +2,7 @@ package HomeWork1;
 
 import java.util.Scanner;
 
-public class HomeTask4 {
+public class Hometask4 {
     static final int MINUTES_PER_HOUR = 60;
     static final int SECONDS_PER_MINUTE = 60;
     static final int SECONDS_PER_HOUR = SECONDS_PER_MINUTE * MINUTES_PER_HOUR;

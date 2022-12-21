@@ -2,7 +2,7 @@ package HomeWork1;
 
 import java.util.Scanner;
 
-public class HomeTask5 {
+public class Hometask5 {
     final static double INCHES_IN_CENTIMETERS = 2.54;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

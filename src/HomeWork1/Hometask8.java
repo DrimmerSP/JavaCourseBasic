@@ -2,13 +2,12 @@ package HomeWork1;
 
 import java.util.Scanner;
 
-public class HomeTask1 {
+public class Hometask8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int r = scanner.nextInt();
+        int balance = scanner.nextInt();
 
-        double v = 4. / 3 * Math.PI * Math.pow(r, 3);
-
-        System.out.println(v);
+        double dayCash = balance / 30.0;
+        System.out.println(dayCash);
     }
 }

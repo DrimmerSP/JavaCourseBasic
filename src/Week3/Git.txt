@@ -1,0 +1,3 @@
+// Установка Гит
+// https://git-scm.com/book/ru/v2/Введение-Установка-Git
+// https://learngitbranching.js.org/?locale=ru_RU   --- тренажёр ГИТ

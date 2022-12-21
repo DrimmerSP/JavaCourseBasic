@@ -1,5 +1,7 @@
 package HomeWork1;
 
+import java.util.Scanner;
+
 public class ABC {
     public static void main(String[] args) {
      /*   int a = 4001;
@@ -12,7 +14,6 @@ public class ABC {
         int y = x = x+1;
         int z = 1;
         System.out.println(y);
-
 
     }
 }

@@ -1,12 +1,11 @@
 package HomeWork1;
 
 import java.util.Scanner;
-
-public class HomeTask3 {
+public class Hometask1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String userName = scanner.nextLine();
-
-        System.out.println("Привет, " + userName + "!");
+        int r = scanner.nextInt();
+        double v = 4. / 3 * Math.PI * Math.pow(r, 3);
+        System.out.println(v);
     }
 }
