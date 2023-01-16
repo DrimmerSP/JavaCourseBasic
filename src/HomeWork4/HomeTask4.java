@@ -1,29 +1,33 @@
 package HomeWork4;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class HomeTask4 {
+    //Необходимо вывести на экран построчно сколько встретилось различных элементов.
+    // Каждая строка должна содержать количество элементов и сам элемент через пробел.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
         int[] arr = new int[n];
-        int i;
-        for (i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
 
-        int count;
-        for (i = 0; i < arr.length; i++) {
-            count = 0;
-            for (var j = 0; j < arr.length; j++) {
-                if (arr[i] == arr[j]) {
-                    count++;
-                }
+        Map<Integer, Integer> result = new HashMap<>();
+        for (int j = 0; j < arr.length; j++) {
+            if (result.containsKey(arr[j])){
+                int temp = result.get(arr[j]);
+                result.put(arr[j], temp +1);
+            }else {
+                result.put(arr[j], 1);
             }
-            System.out.println(count + " " + arr[i]);
         }
+        for (Map.Entry<Integer, Integer> item : result.entrySet()) {
+            System.out.println(item.getValue() + " " + item.getKey());
+        }
+
     }
 }
-//TODO
-//решить проблему подсчёта
