@@ -7,11 +7,10 @@ public class ConvertAmountWhithSelection {
 
     public static void main(String[] args) {
 
-        int dollars;
-        double roubles;
-        int digit;
+        int[] dollarsArray;
+        double[] roublesArray;
         int n;
-        int i;
+      //  int i;
 
         Scanner input = new Scanner(System.in);
         // Отобразить инструкции
@@ -21,7 +20,7 @@ public class ConvertAmountWhithSelection {
         // до тех пор, пока не будет введено корректное значение
 
         do {
-            System.out.println("Введитекорректное количество конвертаций: ");
+            System.out.print("Введите корректное количество конвертаций: ");
             n = input.nextInt();
         } while (n <= 0);
 
@@ -31,44 +30,41 @@ public class ConvertAmountWhithSelection {
 
 
         //Получить сумму денег в американских долларах
-        System.out.print("Введите сумму денег в американских долларах: ");
-        dollars = input.nextInt();
-
-        //Отобразить сумму денег в российских рублях с правильным окончанием
-        System.out.print(dollars);
-
-        if (5 <= dollars && dollars <= 20) {
-            System.out.print(dollars);
-        } else {
-            digit = dollars % 10;
-
-            if (digit == 1) {
-                System.out.print(" американский доллар равен ");
-            } else if (2 <= digit && digit <= 4) {
-                System.out.print(" американский доллара равна ");
-            } else {
-                System.out.print(" американских долларов равны ");
-            }
+        System.out.print("Введите " + n + " сумм денег в американских долларах: ");
+        dollarsArray = new int[n];
+        for (int j = 0; j < n; j++) {
+            dollarsArray[j] = input.nextInt();
         }
 
+        //Конвертировать n сумм денег в российские рубли
+        roublesArray = finde_rubles(dollarsArray, n);
 
-        //Конвертировать сумму денег в российские рубли
-        roubles = finde_rubles(dollars);    // заменить на  = finde_rubles(dollar);  (ROUBLES_PER_DOLLAR * dollars;)
-
-        //отобразить сумму денег в российских рублях в пользу покупателя
-        System.out.println("она равна " + (int) (roubles * 100) / 100.0 + " российского рубля.");
-    }
-
-    public static void instruct() {
-        System.out.println("Эта программа конвертирует сумму днег " + "из американских долларов в российские рубли.");
-        System.out.println("Курс покупки раен: " + ROUBLES_PER_DOLLAR + " рубля.");
+        // отобразить в таблице n сумм денег в американтских долларах и
+        // эквивалентные им суммы денег в российских реблях в пользу покупателя
+        System.out.println("\n    Сумма, Долларов ||  Рублей ||");
+        for (int j = 0; j < n; ++j) {
+            System.out.println("\t\t\t\t" + dollarsArray[j] + " || " + (int)((roublesArray[j] * 100)/100.0) + " ||");
+        }
     }
 
     /**
-     * Конвертирует сумму денег из американских долларов в российские рубли.
+     * Отображает инструкцию
      */
-    public static double finde_rubles(int dollars) {
-        return ROUBLES_PER_DOLLAR * dollars;
+    public static void instruct() {
+        System.out.println("Эта программа конвертирует сумму днег " + "из американских долларов в российские рубли.");
+        System.out.println("Курс покупки раен: " + ROUBLES_PER_DOLLAR + " рубля. \n");
+    }
+
+    /**
+     * Конвертирует n сумм денег из американских долларов в российские рубли.
+     */
+    public static double[] finde_rubles(int[] dollarsArray, int n) {
+        double[] roublesArray = new double[n];
+       // int i;
+        for (int j = 0; j < n; ++j) {
+            roublesArray[j] = ROUBLES_PER_DOLLAR * dollarsArray[j];
+        }
+        return roublesArray;
     }
 
 }
