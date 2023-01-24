@@ -2,20 +2,21 @@ package homeWork5;
 
 import java.util.Scanner;
 
-public class HomeTask10 {
+public class HomeTask8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        recSum(n);
+
+        System.out.println(recSum(n));
     }
 
     public static int recSum(int num){
+        int buff = 0;
         if (num / 10 > 0){
-            System.out.print((num % 10) + " ");
-            return recSum(num / 10);
+            buff = recSum(num / 10) + (num % 10);
         }else {
-            System.out.println(num % 10);
-            return num / 10;
+            return num % 10;
         }
+        return buff;
     }
 }
