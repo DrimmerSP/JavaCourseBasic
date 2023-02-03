@@ -52,16 +52,56 @@ public class AmazingString {
 
 //     Проверить, есть ли переданная подстрока в AmazingString (на вход подается массив char).
 //     Вернуть true, если найдена и false иначе
+    public boolean isContainsArrChar(char[] arrChar) {
+        if (arrChar.length > this.amazingChars.length) {
+            return false;
+        }
 
+        for (int i = 0; i < amazingChars.length - arrChar.length; i++) {
+            if (this.amazingChars[i] == arrChar[0]) {
+                for (int j = 0; j < arrChar.length; j++) {
+                    if (this.amazingChars[i + j] != arrChar[j]) {
+                        break;
+                    }
+                    if (j == arrChar.length - 1) {
+                        return true;
+                    }
+                }
 
-//    Проверить, есть ли переданная подстрока в AmazingString (на вход подается String).
+            }
+        }
+        return false;
+    }
+
+    //    Проверить, есть ли переданная подстрока в AmazingString (на вход подается String).
 //    Вернуть true, если найдена и false иначе
+    public boolean isContainsString(String string) {
+        return isContainsArrChar(string.toCharArray());
+    }
 
+    //    Удалить из строки AmazingString ведущие пробельные символы, если они есть
+    public void trimLeadingSpaces() {
+        int spaces = 0;
+        int i = 0;
+        while (this.amazingChars[i] == ' ') {
+            spaces++;
+            i++;
+        }
+        char[] arrayChar = new char[amazingChars.length - spaces];
+        for (int j = 0; j < arrayChar.length; j++) {
+            arrayChar[j] = amazingChars[j + spaces];
+        }
+        this.amazingChars = arrayChar;
+    }
 
-//    Удалить из строки AmazingString ведущие пробельные символы, если они есть
-
-
-//    Развернуть строку (первый символ должен стать последним, а последний первым и т.д.)
-
+    //    Развернуть строку (первый символ должен стать последним, а последний первым и т.д.)
+    public void reversString() {
+        char[] chars = new char[amazingChars.length];
+        int length = amazingChars.length;
+        for (int i = 0; i < length; i++) {
+            chars[i] = amazingChars[length - i - 1];
+        }
+        this.amazingChars = chars;
+    }
 
 }
