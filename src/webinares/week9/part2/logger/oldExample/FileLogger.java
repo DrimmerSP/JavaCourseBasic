@@ -1,6 +1,6 @@
 package webinares.week9.part2.logger.oldExample;
 
-import week9.part2.logger.Logger;
+import webinares.week9.part2.logger.Logger;
 
 import java.io.FileWriter;
 import java.io.IOException;
