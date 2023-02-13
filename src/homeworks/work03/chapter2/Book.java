@@ -7,11 +7,22 @@ public class Book {
     private final String bookName;
     private final String bookAuthor;
     private Boolean taken;  // Взята книга или нет.
+    private Double rate;
+    private int countRatedUsers;
 
+    public Double getRate() {
+        return rate;
+    }
+
+    public void setRate(int rateFromUser) {
+        countRatedUsers++;
+        rate = (rate * (countRatedUsers - 1) + rateFromUser) / countRatedUsers;
+    }
 
     public String getBookName() {
         return bookName;
     }
+
     public String getBookAuthor() {
         return bookAuthor;
     }
@@ -28,6 +39,8 @@ public class Book {
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
         taken = false;
+        rate = 0.0;
+        countRatedUsers = 0;
     }
 
     @Override

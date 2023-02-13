@@ -1,7 +1,5 @@
 package homeworks.work03.chapter2;
 
-import java.util.ArrayList;
-
 /**
  * Должен быть реализован класс Посетитель, содержащий имя посетителя и идентификатор
  * (null до тех пор, пока не возьмет книгу)
@@ -18,15 +16,16 @@ public class User {
      * Она есть в библиотеке.
      * У посетителя сейчас нет книги.
      * Она не одолжена.
-     *
+     * <p>
      * Также если посетитель в первый раз обращается за книгой — дополнительно выдать ему идентификатор читателя.
      */
 
 
-    public User(String nameUser){
+    public User(String nameUser) {
         this.nameUser = nameUser;
         id = null;
     }
+
     public String getNameUser() {
         return nameUser;
     }

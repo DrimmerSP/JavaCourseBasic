@@ -62,7 +62,18 @@ public class Main {
         System.out.println("Книга 4 должна быть выдана: %s".formatted(book4.isTaken()));
         System.out.println("Пользователь %s получил книгу %s: %s".formatted(user.getNameUser(), book4.getBookName(),
                 user.getNameBookFromLib()));
-        // Проверку на возвращение книги
-        // Дополнительное
+        System.out.println("--------------------------");
+        System.out.println();
+
+        System.out.println("Вернём книгу от пользователя: ");
+        library.returnBookFromUser(book5.getBookName(), user, 8);
+        System.out.println("Пользователь: %s должен веруть книгу - %s".formatted(user.getNameUser(), user.getNameBookFromLib()));
+        library.returnBookFromUser(book4.getBookName(), user, 9);
+        System.out.println("Теперь %s вернул взятую книуг.".formatted(user.getNameUser()));
+        System.out.println("Книгу \"%s\", автора \"%s\" читают или нет?: (%s)".formatted(book4.getBookName(), book4.getBookAuthor(), book4.isTaken()));
+        System.out.println("--------------------------");
+
+        System.out.println("Средняя оценка книги \"%s\" теперь: %s".formatted(book4.getBookName(), library.getBookRateByName(book4.getBookName())));
+
     }
 }
