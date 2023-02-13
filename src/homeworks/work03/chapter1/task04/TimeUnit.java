@@ -15,7 +15,7 @@ package homeworks.work03.chapter1.task04;
  */
 
 public class TimeUnit {
-    // валидация
+
     private int hours = 0;
     private int minutes = 0;
     private int seconds = 0;
@@ -27,17 +27,12 @@ public class TimeUnit {
     }
 
     public TimeUnit(int hours, int minutes) {
-//        this.hours = hours;
-//        this.minutes = minutes;
-//        this.seconds = 0;
-        new TimeUnit(hours, minutes, 0);
+        addHours(hours);       // Исправлена строка
+        addMinutes(minutes);   // Исправлена строка
     }
 
     public TimeUnit(int hours) {
-//        this.hours = hours;
-//        this.minutes = 0;
-//        this.seconds = 0;
-        new TimeUnit(hours, 0);
+        addHours(hours);      // Исправлена строка
     }
 
     public void printTimeIn24() {
