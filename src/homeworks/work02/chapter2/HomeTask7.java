@@ -19,7 +19,7 @@ public class HomeTask7 {
         for (int i = 0; i < n; i++) {
             petName[i] = scanner.next();
         }
-       // scanner.nextLine();
+        // scanner.nextLine();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < 3; j++) {
                 score[i][j] = scanner.nextInt();
@@ -36,7 +36,7 @@ public class HomeTask7 {
         int index = 0;
         double xedni = midScore[0];
         for (int i = 0; i < n; i++) {
-            if (xedni < midScore[i]){
+            if (xedni < midScore[i]) {
                 xedni = midScore[i];
                 index = i;
             }
@@ -46,31 +46,33 @@ public class HomeTask7 {
 
         midScore[index] = 0;
 
-         index = 0;
-         xedni = midScore[0];
+        index = 0;
+        xedni = midScore[0];
         for (int i = 0; i < n; i++) {
-            if (xedni < midScore[i]){
+            if (xedni < midScore[i]) {
                 xedni = midScore[i];
                 index = i;
             }
         }
 
-        StringBuilder builder = new StringBuilder(String.format("%s: %s, %s", name[index], petName[index], decimalFormat.format(midScore[index])));
+        StringBuilder builder = new StringBuilder(String.format("%s: %s, %s", name[index], petName[index],
+                decimalFormat.format(midScore[index])));
         builder.setLength(builder.length() - 1);
         System.out.println(builder);
 
         midScore[index] = 0;
 
-         index = 0;
-         xedni = midScore[0];
+        index = 0;
+        xedni = midScore[0];
         for (int i = 0; i < n; i++) {
-            if (xedni < midScore[i]){
+            if (xedni < midScore[i]) {
                 xedni = midScore[i];
                 index = i;
             }
         }
 
-         builder = new StringBuilder(String.format("%s: %s, %s", name[index], petName[index], decimalFormat.format(midScore[index])));
+        builder = new StringBuilder(String.format("%s: %s, %s", name[index], petName[index],
+                decimalFormat.format(midScore[index])));
         builder.setLength(builder.length() - 1);
         System.out.println(builder);
 
