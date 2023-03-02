@@ -1,5 +1,6 @@
 package homeworks.projects.project02;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -12,6 +13,9 @@ public class Account {
     private double balance;
     private static double annualInterestRate;
     private Date dateCreated;
+    private String name;
+    private ArrayList<Transaction> transactions = new ArrayList<>();
+
 
     /**
      * Создаёт по умолчанию банковский счёт
@@ -27,6 +31,13 @@ public class Account {
         this.id = id;
         this.balance = balance;
         dateCreated = new Date();
+    }
+
+    public Account(String name, int id, double balance) {
+        this.id = id;
+        this.name = name;
+        this.balance = balance;
+        dateCreated = new java.util.Date();
     }
 
     /**
@@ -56,6 +67,13 @@ public class Account {
      */
     public Date getDateCreated() {
         return dateCreated;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Transaction> getTransactions() {
+        return transactions;
     }
 
     /**
@@ -91,6 +109,7 @@ public class Account {
      */
     public void withdraw(double amount) {
         balance -= amount;
+        transactions.add(new Transaction('-', amount, balance, ""));
     }
 
     /**
@@ -98,6 +117,7 @@ public class Account {
      */
     public void deposit(double amount) {
         balance += amount;
+        transactions.add(new Transaction('+', amount, balance, ""));
     }
 
 
