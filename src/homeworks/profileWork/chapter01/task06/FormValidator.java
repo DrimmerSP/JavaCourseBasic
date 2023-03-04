@@ -7,7 +7,7 @@ import java.time.format.DateTimeParseException;
 public class FormValidator {
     public static void checkName(String str){
         if ((str.length() < 2) && (str.length() > 20)){
-            throw new IllegalArgumentException("Username is too long");
+            throw new IllegalArgumentException("Имя пользователя не верной длинны.");
         }
     }
 
