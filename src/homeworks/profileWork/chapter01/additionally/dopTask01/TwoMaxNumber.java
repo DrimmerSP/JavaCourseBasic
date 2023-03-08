@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
+ *1)
  * паблик класс ДваМаксимальных(){
+ * мэин{
  * 	инт н;
  * 	Cканнер сканнер = нью Сканнер(Систем.ин);
  * 	н = сканнер.некстИнт;
@@ -15,6 +17,8 @@ import java.util.Scanner;
  *        }
  * 	Аррайс.сорт(аррай);
  * 	Систем.аут.принтлн(аррай[н - 1] + " " + аррай[н - 2]);
+ *     }
+ * }
  */
 public class TwoMaxNumber {
     public static void main(String[] args) {
