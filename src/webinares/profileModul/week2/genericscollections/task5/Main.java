@@ -1,4 +1,4 @@
-package week2.genericscollections.task5;
+package  webinares.profileModul.week2.genericscollections.task5;
 
 import java.util.HashSet;
 import java.util.TreeSet;

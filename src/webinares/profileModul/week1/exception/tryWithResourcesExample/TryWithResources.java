@@ -1,4 +1,4 @@
-package week1.exception.tryWithResourcesExample;
+package  webinares.profileModul.week1.exception.tryWithResourcesExample;
 
 import java.io.File;
 import java.io.FileNotFoundException;

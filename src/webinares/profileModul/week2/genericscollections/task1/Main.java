@@ -1,4 +1,4 @@
-package week2.genericscollections.task1;
+package  webinares.profileModul.week2.genericscollections.task1;
 
 /*
 Создать класс Pair, который умеет хранить два значения:

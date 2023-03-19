@@ -1,4 +1,4 @@
-package week3.reflection.task2;
+package  webinares.profileModul.week3.reflection.task2;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

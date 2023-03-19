@@ -1,4 +1,4 @@
-package week1.exception.task4;
+package  webinares.profileModul.week1.exception.task4;
 
 /*
 Дан код простенького калькулятора. Нужно:
@@ -15,10 +15,10 @@ package week1.exception.task4;
 4. Может быть переполнение int сверху или снизу.
  */
 
-import week1.exception.task4.exceptions.MyDivisionByZeroException;
-import week1.exception.task4.exceptions.MyInputException;
-import week1.exception.task4.exceptions.MyIntOverflowException;
-import week1.exception.task4.exceptions.MyWrongOperatorException;
+import  webinares.profileModul.week1.exception.task4.exceptions.MyDivisionByZeroException;
+import  webinares.profileModul.week1.exception.task4.exceptions.MyInputException;
+import  webinares.profileModul.week1.exception.task4.exceptions.MyIntOverflowException;
+import  webinares.profileModul.week1.exception.task4.exceptions.MyWrongOperatorException;
 
 import java.util.Scanner;
 

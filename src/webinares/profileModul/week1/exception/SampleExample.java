@@ -1,4 +1,4 @@
-package week1.exception;
+package  webinares.profileModul.week1.exception;
 
 import java.io.IOException;
 

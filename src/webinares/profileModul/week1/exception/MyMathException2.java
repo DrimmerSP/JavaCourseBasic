@@ -1,4 +1,4 @@
-package week1.exception;
+package  webinares.profileModul.week1.exception;
 
 public class MyMathException2 extends Exception {
     //extends ArithmeticException

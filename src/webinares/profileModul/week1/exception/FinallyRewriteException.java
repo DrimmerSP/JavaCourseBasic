@@ -1,4 +1,4 @@
-package week1.exception;
+package  webinares.profileModul.week1.exception;
 
 public class FinallyRewriteException {
     public static void main(String[] args) throws MyMathException {

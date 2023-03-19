@@ -1,4 +1,4 @@
-package week3.reflection.task2;
+package  webinares.profileModul.week3.reflection.task2;
 
 /*
     Вывести все поля класса, их модификаторы и типы.

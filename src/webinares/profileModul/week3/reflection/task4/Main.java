@@ -1,4 +1,4 @@
-package week3.reflection.task4;
+package  webinares.profileModul.week3.reflection.task4;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

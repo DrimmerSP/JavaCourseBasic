@@ -1,4 +1,4 @@
-package week1.exception.tryWithResourcesExample.customResource;
+package  webinares.profileModul.week1.exception.tryWithResourcesExample.customResource;
 
 public class MainTestMyResource {
     public static void main(String[] args) {

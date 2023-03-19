@@ -1,4 +1,4 @@
-package week1.exception.task4.exceptions;
+package  webinares.profileModul.week1.exception.task4.exceptions;
 
 public class MyIntOverflowException extends MyBaseException {
 

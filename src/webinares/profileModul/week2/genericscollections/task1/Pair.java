@@ -1,4 +1,4 @@
-package week2.genericscollections.task1;
+package  webinares.profileModul.week2.genericscollections.task1;
 
 public class Pair<K extends Number, V extends String> {
     private K key;
