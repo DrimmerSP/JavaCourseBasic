@@ -9,7 +9,7 @@ public class TryCatchFinally {
         Scanner scanner = null;
 
         try {
-            scanner = new Scanner(new File("test.txt"));
+            scanner = new Scanner(new File("webinares/profileModul/test.txt"));
             while (scanner.hasNext()) {
                 System.out.println(scanner.nextLine());
             }
