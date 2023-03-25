@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TestMain {
     public static void main(String[] args) {
-        String parentheses = new IsSimpleValidParentheses().toString();
+        String parentheses;
         Scanner scanner = new Scanner(System.in);
         parentheses = scanner.nextLine();
         System.out.println(IsSimpleValidParentheses.validParentheses(parentheses));
