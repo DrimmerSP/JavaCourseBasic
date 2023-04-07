@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class TryWithMultipleResources {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(new File("webinares/profileModul/test.txt"));
+        try (Scanner scanner = new Scanner(new File("profileModuelWebinars/test.txt"));
              PrintWriter writer =  new PrintWriter(new File("testWrite.txt"))
         ) {
             while (scanner.hasNext()) {
