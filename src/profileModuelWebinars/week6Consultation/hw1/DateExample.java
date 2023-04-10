@@ -1,4 +1,4 @@
-package week6.consultation.hw1;
+package profileModuelWebinars.week6Consultation.hw1;
 
 import javax.swing.text.DateFormatter;
 import java.text.DateFormat;

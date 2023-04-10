@@ -2,10 +2,10 @@
 version: "3.9"
 services:
   postgres:
-    container_name: localPostgresSQLDBJava16Tuesday
+    container_name: flowerShopDB
     image: postgres
     environment:
-      POSTGRES_DB: "local_db"
+      POSTGRES_DB: "flowers_shop_db"
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "12345"
     ports:

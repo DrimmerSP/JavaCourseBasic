@@ -1,7 +1,7 @@
 package profileModuelWebinars.week3.annotation.task6;
 
-import webinares.profileModul.week3.annotation.task5.ClassDescription;
-import webinares.profileModul.week3.annotation.task5.PerfectClass;
+import profileModuelWebinars.week3.annotation.task5.ClassDescription;
+import profileModuelWebinars.week3.annotation.task5.PerfectClass;
 
 public class ClassDescriptionSaver {
     public static void writeDescription(Class<?> clazz) {

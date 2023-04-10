@@ -1,6 +1,6 @@
 package profileModuelWebinars.week3.reflection.task3;
 
-import webinares.profileModul.week3.reflection.task2.Task2;
+import profileModuelWebinars.week3.reflection.task2.Task2;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

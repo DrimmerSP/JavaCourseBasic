@@ -1,6 +1,6 @@
 package profileModuelWebinars.week3.reflection.task1;
 
-import webinares.profileModul.week3.reflection.task1.structure.D;
+import profileModuelWebinars.week3.reflection.task1.structure.D;
 
 import java.util.ArrayList;
 import java.util.Arrays;

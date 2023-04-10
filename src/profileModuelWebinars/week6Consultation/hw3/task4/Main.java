@@ -1,6 +1,6 @@
-package week6.consultation.hw3.task4;
+package profileModuelWebinars.week6Consultation.hw3.task4;
 
-import week6.consultation.hw3.task4.structure.Z;
+import profileModuelWebinars.week6Consultation.hw3.task4.structure.Z;
 
 import java.util.ArrayList;
 import java.util.List;

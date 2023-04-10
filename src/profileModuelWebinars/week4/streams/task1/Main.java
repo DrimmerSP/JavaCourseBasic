@@ -1,6 +1,6 @@
 package profileModuelWebinars.week4.streams.task1;
 
-import webinares.profileModul.week4.functional.task2.Square;
+import profileModuelWebinars.week4.functional.task2.Square;
 
 import java.util.ArrayList;
 import java.util.List;

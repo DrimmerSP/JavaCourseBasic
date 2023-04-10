@@ -1,4 +1,4 @@
-package week6.consultation.hw1.task4;
+package profileModuelWebinars.week6Consultation.hw1.task4;
 
 /*
      Создать класс MyEvenNumber, который хранит четное число int n. Используя

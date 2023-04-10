@@ -1,4 +1,4 @@
-package week6.consultation.hw1.task1;
+package profileModuelWebinars.week6Consultation.hw1.task1;
 
 public class Task1 {
     public static void main(String[] args) {

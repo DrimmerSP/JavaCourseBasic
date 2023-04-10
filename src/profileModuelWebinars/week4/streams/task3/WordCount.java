@@ -1,6 +1,6 @@
 package profileModuelWebinars.week4.streams.task3;
 
-import webinares.profileModul.week3.reflection.task1.structure.C;
+import profileModuelWebinars.week3.reflection.task1.structure.C;
 
 import java.util.*;
 import java.util.function.Function;
