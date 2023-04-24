@@ -1,27 +1,27 @@
-drop TABLE clients CASCADE;
-drop TABLE flowers CASCADE;
-drop TABLE orders CASCADE;
+DROP TABLE clients CASCADE;
+DROP TABLE flowers CASCADE;
+DROP TABLE orders CASCADE;
 
-create table if not exists flowers
+CREATE TABLE IF NOT EXISTS flowers
 (
-    f_id    serial primary key,
-    f_name  varchar(100) unique check ( f_name <> '') not null,
-    f_price integer                                   not null
+    f_id    SERIAL PRIMARY KEY,
+    f_name  VARCHAR(100) UNIQUE CHECK ( f_name <> '') NOT NULL,
+    f_price INTEGER                                   NOT NULL
 );
 
-create table if not exists clients
+CREATE TABLE IF NOT EXISTS clients
 (
-    c_id    serial primary key,
-    c_name  varchar(50)        not null,
-    c_phone varchar(30) unique not null
+    c_id    SERIAL PRIMARY KEY,
+    c_name  VARCHAR(50)        NOT NULL,
+    c_phone VARCHAR(30) UNIQUE NOT NULL
 );
 
-create table if not exists orders
+CREATE TABLE IF NOT EXISTS orders
 (
-    o_id        serial primary key,
-    o_client_id integer references clients (c_id)                   not null,
-    o_flower_id integer references flowers (f_id)                   not null,
-    o_amount    integer check ( o_amount >= 1 and o_amount <= 1000) not null,
-    o_date      timestamp default (now())
+    o_id        SERIAL PRIMARY KEY,
+    o_client_id INTEGER REFERENCES clients (c_id)                   NOT NULL,
+    o_flower_id INTEGER REFERENCES flowers (f_id)                   NOT NULL,
+    o_amount    INTEGER CHECK ( o_amount >= 1 AND o_amount <= 1000) NOT NULL,
+    o_date      TIMESTAMP DEFAULT (NOW())
 );
 

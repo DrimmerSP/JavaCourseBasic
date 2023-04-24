@@ -1,23 +1,23 @@
-select *
+SELECT *
 FROM flowers;
 
-select *
+SELECT *
 FROM clients;
 -- drop TABLE clients CASCADE;
 -- drop TABLE flowers CASCADE;
 -- drop TABLE orders CASCADE;
 
-select c.c_name, c.c_phone, f.f_name, o_amount, f.f_price, o_date
+SELECT c.c_name, c.c_phone, f.f_name, o_amount, f.f_price, o_date
 FROM orders
-         join clients c on orders.o_client_id = c.c_id
-         join flowers f on f.f_id = orders.o_flower_id
-where f.f_name = 'Розы';
+         JOIN clients c ON orders.o_client_id = c.c_id
+         JOIN flowers f ON f.f_id = orders.o_flower_id
+WHERE f.f_name = 'Розы';
 
-select c.c_name, c.c_phone, f.f_name, o_amount, (o_amount * f.f_price) as o_cost, o_date
+SELECT c.c_name, c.c_phone, f.f_name, o_amount, (o_amount * f.f_price) AS o_cost, o_date
 FROM orders
-         join clients c on orders.o_client_id = c.c_id
-         join flowers f on f.f_id = orders.o_flower_id
-where (o_amount * f.f_price) > 500;
+         JOIN clients c ON orders.o_client_id = c.c_id
+         JOIN flowers f ON f.f_id = orders.o_flower_id
+WHERE (o_amount * f.f_price) > 500;
 
 
 
